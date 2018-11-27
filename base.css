@@ -1,0 +1,17 @@
+* {
+  text-align: center;
+}
+
+body {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 786px) {
+  body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

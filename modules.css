@@ -1,3 +1,4 @@
+/* Mobile */
 #a {
   background-color: blue;
 }
@@ -14,70 +15,131 @@
 
 #e {
   background-color: coral;
-  float: left;
 }
 
 #f {
   background-color: chartreuse;
-  float: left;
 }
 
 #g {
   background-color: brown;
-  float: left;
 }
 
 #h {
   background-color: seagreen;
-  float: left;
 }
 
 #i {
   background-color: goldenrod;
-  clear: both;
 }
 
-@media (min-width: 786px) {
+body {
+  grid-template-columns: 240px 240px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "a a"
+    "b b"
+    "c c"
+    "d d"
+    "e f"
+    "g h"
+    "i i";
+}
+
+/* Tablet */
+@media (min-width: 636px) {
+  #a {
+    background-color: rgb(255, 255, 64);
+  }
+
+  #b {
+    background-color: rgb(223, 223, 75);
+  }
+
+  #c {
+    background-color:rgb(212, 212, 11);
+  }
+  
+  #d {
+    background-color:rgb(214, 255, 64);
+  }
+
+  #e {
+    background-color: rgb(200, 255, 0);
+  }
+
+  #f {
+    background-color: chartreuse;
+  }
+
+  #g {
+    background-color: rgb(115, 255, 50);
+  }
+  
+  #h {
+    background-color: rgb(60, 211, 0);
+  }
+  
+  #i {
+    background-color: rgb(32, 192, 0);
+  }
+
+  body {
+    grid-template-columns: 212px 212px 212px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "a a a"
+      "b b b"
+      "c d e"
+      "f g h"
+      "i i i";
+  }
+}
+
+/* Desktop */
+@media (min-width: 840px) {
   #a {
     background-color: gold;
   }
+
   #b {
     background-color: green;
-    float: left;
   }
   #c {
     background-color: rebeccapurple;
-    float: left;
   }
   
   #d {
     background-color: magenta;
-    float: left;
   }
   
   #e {
     background-color: darkblue;
-    float: left;
   }
   
   #f {
     background-color: aquamarine;
-    float: left;
   }
   
   #g {
     background-color: greenyellow;
-    float: left;
   }
   
   #h {
     background-color: pink;
-    float: left;
   }
   
   #i {
     background-color: sienna;
-    float: right;
-    clear: none;
+  }
+
+  body {
+    grid-template-columns: 200px 190px 190px 190px 190px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "a a a a a"
+      "b c c d d"
+      "b e f g h"
+      "b i i i i";
   }
 }

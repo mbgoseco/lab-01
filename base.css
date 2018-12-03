@@ -3,13 +3,60 @@
 }
 
 body {
+  display: grid;
   width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 786px) {
+#a {
+  grid-area: a;
+}
+
+#b {
+  grid-area: b;
+}
+
+#c {
+  grid-area: c;
+}
+
+#d {
+  grid-area: d;
+}
+
+#e {
+  grid-area: e;
+}
+
+#f {
+  grid-area: f;
+}
+
+#g {
+  grid-area: g;
+}
+
+#h {
+  grid-area: h;
+}
+
+#i {
+  grid-area: i;
+}
+
+@media (min-width: 636px) {
   body {
+    display: grid;
+    width: 636px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 840px) {
+  body {
+    display: grid;
     width: 960px;
     margin-left: auto;
     margin-right: auto;
